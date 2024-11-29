@@ -1,0 +1,85 @@
+{
+  "name": "rss",
+  "version": "1.2.2",
+  "description": "RSS feed generator. Add RSS feeds to any project. Supports enclosures and GeoRSS.",
+  "keywords": [
+    "rss",
+    "xml",
+    "atom",
+    "podcasts",
+    "ghost",
+    "feed",
+    "feed builder",
+    "rss feed"
+  ],
+  "main": "lib/index",
+  "scripts": {
+    "test": "tape test --tap | tap-difflet",
+    "lint": "grunt lint",
+    "test:browser": "testling -u"
+  },
+  "homepage": "http://github.com/dylang/node-rss",
+  "author": {
+    "name": "Dylan Greene",
+    "email": "dylang@gmail.com"
+  },
+  "contributors": [
+    "Dylan Greene <dylang@gmail.com>",
+    "Xavier Damman <xdamman@gmail.com>",
+    "Michael R. Lange",
+    "Victor Jonsson",
+    "Danny Graham",
+    "Patrick Garman <contact@pmgarman.me>",
+    "Fred Morstatter",
+    "Eric Vantillard <eric.vantillard@evaxion.fr>",
+    "Jason Karns <jasonkarns>",
+    "Hannah Wolfe <github.erisds@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/dylang/node-rss.git"
+  },
+  "bugs": {
+    "url": "http://github.com/dylang/node-rss/issues"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/9..latest",
+      "chrome/latest",
+      "firefox/latest",
+      "safari/latest",
+      "opera/latest",
+      "iphone/latest",
+      "ipad/latest",
+      "android-browser/latest"
+    ]
+  },
+  "dependencies": {
+    "mime-types": "2.1.35",
+    "xml": "1.0.1"
+  },
+  "devDependencies": {
+    "folderify": "1.2.1",
+    "grunt": "1.6.1",
+    "grunt-cli": "1.4.3",
+    "grunt-contrib-jshint": "3.2.0",
+    "grunt-release": "0.14.0",
+    "grunt-templates-dylang": "1.0.12",
+    "include-folder": "1.0.0",
+    "load-grunt-tasks": "5.1.0",
+    "mockdate": "3.0.5",
+    "q": "1.5.1",
+    "tap-difflet": "0.7.2",
+    "tape": "5.7.2",
+    "testling": "1.7.4",
+    "time-grunt": "1.4.0",
+    "xml2js": "0.6.2"
+  },
+  "browserify": {
+    "transform": [
+      "folderify"
+    ]
+  },
+  "license": "MIT"
+}
